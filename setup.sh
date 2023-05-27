@@ -73,7 +73,7 @@ humansd init $validator_node_name --chain-id humans_3000-31
 
 sleep 10
 
-curl -s https://github.com/humansdotai/testnets/blob/master/friction/mission-3/genesis-m3-p1.json > $HOME/.humansd/config/genesis.json
+curl -s https://raw.githubusercontent.com/humansdotai/testnets/master/friction/mission-3/genesis-m3-p1.json > $HOME/.humansd/config/genesis.json
 curl -Ls https://snapshots.kjnodes.com/humans-testnet/addrbook.json > $HOME/.humansd/config/addrbook.json
 
 SEEDS=""
