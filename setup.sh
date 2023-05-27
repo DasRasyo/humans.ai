@@ -63,7 +63,7 @@ sleep 10
 
 git clone https://github.com/humansdotai/humans
 cd humans
-git checkout v0.1.0
+git checkout v0.2.2
 make install
 
 humansd config keyring-backend test
@@ -76,9 +76,8 @@ sleep 10
 curl -s https://github.com/humansdotai/testnets/blob/master/friction/mission-3/genesis-m3-p1.json > $HOME/.humansd/config/genesis.json
 curl -Ls https://snapshots.kjnodes.com/humans-testnet/addrbook.json > $HOME/.humansd/config/addrbook.json
 
-SEEDS="3f472746f46493309650e5a033076689996c8881@humans-testnet.rpc.kjnodes.com:22659"
-PEERS="ca1e46048e4a9b65d60bc9e749aa431401f34ed7@144.76.45.59:26656,8c3c25fa9cd6289d0342cf0e42916f381a1fd671@78.46.64.59:26656,62faee4c6224b3562d7123acea58180021c8b47b@162.55.173.57:26656,d5519e378247dfb61dfe90652d1fe3e2b3005a5b@65.109.68.190:22656,34fd880f1bf2eb7b7481436d0746bbc05a4a5805@144.76.97.35:26656,ceba57f1376d4949cc0419918d110f0085b24b25@135.181.113.225:26656,7acb02817755961e446859eef57c494687e3330f@162.244.35.40:26656,4762fa22edb91acd78010026f8da5fb71e174acb@142.165.207.19:36656,c94e42eec8bcc7f6db81748a97e5f10d59710e95@135.181.138.160:26656,497886715ac23475f7428bd177b9fa53ff886a8d@78.46.80.79:26656"
-
+SEEDS=""
+PEERS="ceba57f1376d4949cc0419918d110f0085b24b25@135.181.113.225:26656,752d0b45e13954a6052597d180e5eb230e64f4fa@141.95.99.214:26656,6271d80b8fc42da3a2825cc5ef75818dd52423d1@138.201.121.185:26656,bc098ac0149a0a06701e29e4f7c79cac65c25c7f@162.55.173.57:26656,4e6f3ba9f9432766d13686076eadf60900d42e5b@65.108.224.156:26656,59ad24780f3d8b90da29079a8a386aa1355969ef@144.76.45.59:26656"
 sed -i 's|^seeds *=.*|seeds = "'$SEEDS'"|; s|^persistent_peers *=.*|persistent_peers = "'$PEERS'"|' $HOME/.humansd/config/config.toml
 
 
