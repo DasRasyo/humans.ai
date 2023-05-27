@@ -147,7 +147,7 @@ do
             sleep 5
             echo "Stop the script with ctrl C and edit the following command with your information to create your validator!"
             sleep 10
-            echo -e "\033[38;5;205mhumansd tx staking create-validator --amount=1000000000000000000aheart --pubkey=$(humansd tendermint show-validator) --moniker=$validator_node_name --chain-id=humans_3000-1 --commission-rate=0.05 --commission-max-rate=0.10 --commission-max-change-rate=0.01 --min-self-delegation=1000000 --gas=auto --gas-prices=1800000000aheart --from=$wallet_name\033[0m"
+            echo -e "\033[38;5;205mhumansd tx staking create-validator --amount=1000000000000000000aheart --pubkey=$(humansd tendermint show-validator) --moniker=$validator_node_name --chain-id=humans_3000-31 --commission-rate=0.05 --commission-max-rate=0.10 --commission-max-change-rate=0.01 --min-self-delegation=1000000 --gas=auto --gas-prices=1800000000aheart --from=$wallet_name\033[0m"
 		sleep 20
 
         else
