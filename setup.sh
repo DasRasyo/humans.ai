@@ -67,13 +67,13 @@ git checkout v0.1.0
 make install
 
 humansd config keyring-backend test
-humansd config chain-id humans_3000-1
+humansd config chain-id humans_3000-31
 validator_node_name=$(prompt "Enter your validator node name")
-humansd init $validator_node_name --chain-id humans_3000-1 
+humansd init $validator_node_name --chain-id humans_3000-31
 
 sleep 10
 
-curl -s https://raw.githubusercontent.com/humansdotai/testnets/master/friction/genesis.json > $HOME/.humansd/config/genesis.json
+curl -s https://github.com/humansdotai/testnets/blob/master/friction/mission-3/genesis-m3-p1.json > $HOME/.humansd/config/genesis.json
 curl -Ls https://snapshots.kjnodes.com/humans-testnet/addrbook.json > $HOME/.humansd/config/addrbook.json
 
 SEEDS="3f472746f46493309650e5a033076689996c8881@humans-testnet.rpc.kjnodes.com:22659"
